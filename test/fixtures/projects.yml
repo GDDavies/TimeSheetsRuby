@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project_name: MyString
+  project_code: MyString
+  has_warrant: false
+  gate_passed: 1
+  is_capital_project: false
+  start_date: 2017-08-04
+  end_date: 2017-08-04
+
+two:
+  project_name: MyString
+  project_code: MyString
+  has_warrant: false
+  gate_passed: 1
+  is_capital_project: false
+  start_date: 2017-08-04
+  end_date: 2017-08-04

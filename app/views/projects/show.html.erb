@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Project name:</strong>
+  <%= @project.project_name %>
+</p>
+
+<p>
+  <strong>Project code:</strong>
+  <%= @project.project_code %>
+</p>
+
+<p>
+  <strong>Has warrant:</strong>
+  <%= @project.has_warrant %>
+</p>
+
+<p>
+  <strong>Gate passed:</strong>
+  <%= @project.gate_passed %>
+</p>
+
+<p>
+  <strong>Is capital project:</strong>
+  <%= @project.is_capital_project %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @project.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @project.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
