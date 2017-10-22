@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
     
-  resources :users
-    
-  resources :usersapi  
+    namespace :api, defaults: {format: 'json'} do
+        namespace :v1 do
+            resources :users
+            resources :projects
+        end
+    end
     
   root 'static_pages#home'
 
@@ -11,6 +14,6 @@ Rails.application.routes.draw do
   get 'static_pages/about'
 
   resources :projects
-#  resources :users
+  resources :users
     
 end
