@@ -30,6 +30,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        log_in @user
         format.html { flash[:success] = "Welcome to the Sample App!" 
             redirect_to @user }
         format.json { render :show, status: :created, location: @user }
